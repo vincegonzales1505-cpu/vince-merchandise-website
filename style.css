@@ -1,0 +1,125 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #CABA9C; /* Khaki background */
+  color: #102820; /* Dark green text */
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #102820; /* Dark green */
+  padding: 15px 20px;
+  color: #fff;
+  position: relative;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.categories button {
+  margin: 0 5px;
+  padding: 6px 12px;
+  border: none;
+  background: #4C6444; /* Hunter green */
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.categories button:hover {
+  background: #8A6240; /* Raw umber */
+}
+
+/* Menu Button + Dropdown */
+.menu {
+  position: relative;
+}
+
+.menu-btn {
+  font-size: 20px;
+  border: none;
+  background: #4C6444; /* Hunter green */
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-btn:hover {
+  background: #8A6240; /* Raw umber */
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 45px;
+  background: #4D2D18; /* Café noir */
+  border-radius: 5px;
+  overflow: hidden;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  flex-direction: column;
+  display: flex;
+}
+
+.dropdown a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+.dropdown a:hover {
+  background: #8A6240; /* Raw umber hover */
+}
+
+/* Hidden dropdown */
+.hidden {
+  display: none;
+}
+
+/* Product Grid (3x2 layout) */
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.product {
+  background: #8A6240; /* Raw umber */
+  border-radius: 20px;
+  width: 250px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
